@@ -1,12 +1,13 @@
 :root {
   --primary-color: #ff006e;
+  --light-color: #f9f9f9;
+  --dark-color: #242424;
   --bg-color: #6a5be2;
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
 
-  color: #242424;
-  /* background-color: rgba(255, 255, 255, 0.87); */
+  color: var(--dark-color);
   background-color: var(--bg-color);
 
   font-synthesis: none;
@@ -37,16 +38,18 @@ button {
   font-weight: bold;
   font-family: inherit;
   background-color: var(--primary-color);
-  color: #f9f9f9;
+  color: var(--light-color);
   cursor: pointer;
   transition: all 0.3s;
   outline: none;
   border: 1px solid var(--primary-color);
 }
+
 button:hover {
-  background-color: #f9f9f9;
+  background-color: var(--light-color);
   color: var(--primary-color);
 }
+
 button:focus,
 button:focus-visible {
   outline: 4px auto var(--primary-color);

@@ -1,10 +1,13 @@
 :root {
+  --primary-color: #ff006e;
+  --bg-color: #6a5be2;
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
 
   color: #242424;
-  background-color: rgba(255, 255, 255, 0.87);
+  /* background-color: rgba(255, 255, 255, 0.87); */
+  background-color: var(--bg-color);
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -27,23 +30,24 @@ body {
 }
 
 button {
-  border-radius: 8px;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
+  margin-top: 20px;
+  border-radius: 30px;
+  padding: 15px 30px;
+  font-size: 20px;
+  font-weight: bold;
   font-family: inherit;
-  background-color: #646cff;
+  background-color: var(--primary-color);
   color: #f9f9f9;
   cursor: pointer;
   transition: all 0.3s;
   outline: none;
-  border: 1px solid #646cff;
+  border: 1px solid var(--primary-color);
 }
 button:hover {
   background-color: #f9f9f9;
-  color: #646cff;
+  color: var(--primary-color);
 }
 button:focus,
 button:focus-visible {
-  outline: 4px auto #646cff;
+  outline: 4px auto var(--primary-color);
 }
